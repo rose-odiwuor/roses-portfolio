@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-error-container": "#93000a", "inverse-primary": "#ffb4ab", "surface-tint": "#bf0715", "primary": "#b70011", "on-tertiary-fixed": "#201c01", "inverse-on-surface": "#edf0ff", "on-surface-variant": "#5c403c", "tertiary": "#665f3b", "tertiary-fixed-dim": "#d1c79b", "on-tertiary-fixed-variant": "#4d4726", "on-primary-fixed": "#410002", "secondary-container": "#d5e0f8", "on-secondary-fixed": "#111c2d", "surface-container-highest": "#dce2f7", "secondary-fixed-dim": "#bcc7de", "on-primary-fixed-variant": "#93000b", "on-tertiary-container": "#453f1f", "surface-bright": "#f9f9ff", "background": "#f9f9ff", "surface": "#f9f9ff", "primary-container": "#dc2626", "on-tertiary": "#ffffff", "surface-variant": "#dce2f7", "on-background": "#141b2b", "on-primary-container": "#fff6f5", "secondary-fixed": "#d8e3fb", "outline": "#916f6b", "surface-container-high": "#e1e8fd", "surface-container-lowest": "#ffffff", "secondary": "#545f73", "on-surface": "#141b2b", "on-secondary-fixed-variant": "#3c475a", "on-primary": "#ffffff", "error": "#ba1a1a", "on-secondary-container": "#586377", "on-secondary": "#ffffff", "outline-variant": "#e6bdb8", "tertiary-fixed": "#ede3b6", "on-error": "#ffffff", "tertiary-container": "#b4ab82", "surface-container-low": "#f1f3ff", "surface-dim": "#d3daef", "primary-fixed-dim": "#ffb4ab", "surface-container": "#e9edff", "primary-fixed": "#ffdad6", "inverse-surface": "#293040", "error-container": "#ffdad6" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-md": "1rem", "gutter-mobile": "1rem", "space-sm": "0.5rem", "space-3xl": "6rem", "space-lg": "1.5rem", "space-2xl": "4rem", "margin-mobile": "1.25rem", "space-xs": "0.25rem", "margin": "2rem", "space-xl": "2.5rem", "gutter": "1.5rem" }, fontFamily: { "headline-sm": ["Inter"], "body-sm": ["Inter"], "label-md": ["Inter"], "headline-lg": ["Inter"], "code-metric": ["Inter"], "label-sm": ["Inter"], "headline-md": ["Inter"], "display-hero": ["Inter"], "display-hero-mobile": ["Inter"], "eyebrow": ["Inter"], "body-md": ["Inter"], "headline-lg-mobile": ["Inter"], "body-lg": ["Inter"] }, fontSize: { "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "0em", fontWeight: "600" }], "body-sm": ["14px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }], "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }], "headline-lg": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }], "code-metric": ["28px", { lineHeight: "32px", letterSpacing: "-0.02em", fontWeight: "700" }], "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }], "headline-md": ["24px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "700" }], "display-hero": ["56px", { lineHeight: "64px", letterSpacing: "-0.03em", fontWeight: "800" }], "display-hero-mobile": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "800" }], "eyebrow": ["12px", { lineHeight: "16px", letterSpacing: "0.1em", fontWeight: "700" }], "body-md": ["16px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }], "headline-lg-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "700" }], "body-lg": ["18px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "400" }] } } } };</script></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><span class="font-body-md text-body-md text-on-surface truncate">Rose Odiwuor</span><span class="text-outline text-label-sm font-label-sm">/</span><span class="font-label-md text-label-md text-primary truncate">Home</span></div><div class="flex items-center gap-space-sm shrink-0"><button aria-label="Navigation menu" class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-primary transition-colors"><span class="material-symbols-outlined text-[24px]">menu</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhApsclps9SYwdxwPNT-X3gVjibdlTS6GawsGu-0Xl_COqrmb1tnEiqfcKx_iKxgSeJkz0a9yO9Olbx9AFe_MPJRcyzv3AGXuInoLH1R-r6Q4--bvU1bHn24cTgf588zHdYLixYorSqzGYpLkLy2mcBBgsXks86WX2YBK0Lc7wC2xlufasNWTg1lyrCMCn0O1OhyJoI1sbr3jEvwXVrEISUmXZLgZRfepidC4_L64"/></div></div></header><main class="flex flex-col relative w-full pt-16 bg-surface"><div class="flex flex-col w-full">
+<!-- SECTION 1: HERO SECTION -->
+<section class="w-full bg-surface-container-lowest px-margin-mobile py-space-xl md:py-space-2xl">
+<div class="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center gap-space-xl">
+<!-- Left Content -->
+<div class="flex-1 flex flex-col items-start gap-space-md w-full">
+<!-- Badge -->
+<div class="inline-flex items-center gap-2 bg-surface-container-low px-3 py-1.5 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container shrink-0"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wide">Telling stories with data</span>
+</div>
+<!-- Headline & Subtitle -->
+<div class="flex flex-col gap-1 w-full">
+<h1 class="font-display-hero-mobile text-display-hero-mobile md:font-display-hero md:text-display-hero text-on-surface tracking-tight font-extrabold">
+            Rose Odiwuor
+          </h1>
+<p class="font-headline-sm text-headline-sm text-primary-container font-semibold">
+            Data Analyst based in Nairobi, Kenya
+          </p>
+</div>
+<!-- Elevator Pitch -->
+<p class="font-body-lg text-body-lg text-secondary max-w-xl">
+          I turn messy data into clear insights and dashboards that drive business decisions.
+        </p>
+<!-- CTA Buttons -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs w-full sm:w-auto">
+<a class="flex items-center justify-center gap-2 bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md px-6 py-3.5 transition-colors shadow-sm w-full sm:w-auto" href="#contact">
+<span>Let's Connect</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="flex items-center justify-center gap-2 bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md px-6 py-3.5 shadow-sm transition-colors w-full sm:w-auto" href="#projects">
+<span>View My Work</span>
+<span class="material-symbols-outlined text-[18px]">north_east</span>
+</a>
+</div>
+</div>
+<!-- Right Photo Card -->
+<div class="w-full md:w-[420px] shrink-0 flex justify-center">
+<div class="relative w-full max-w-[360px] aspect-square bg-surface-container-lowest p-2 shadow-sm">
+<img alt="Rose Odiwuor - Professional Portrait" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhApsclps9SYwdxwPNT-X3gVjibdlTS6GawsGu-0Xl_COqrmb1tnEiqfcKx_iKxgSeJkz0a9yO9Olbx9AFe_MPJRcyzv3AGXuInoLH1R-r6Q4--bvU1bHn24cTgf588zHdYLixYorSqzGYpLkLy2mcBBgsXks86WX2YBK0Lc7wC2xlufasNWTg1lyrCMCn0O1OhyJoI1sbr3jEvwXVrEISUmXZLgZRfepidC4_L64"/>
+<div class="absolute bottom-4 left-4 bg-surface-container-lowest/95 backdrop-blur-sm px-3 py-1.5 shadow-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[18px]">analytics</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Ready for Q2 Pipelines</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: WHAT I DO SECTION -->
+<section class="w-full bg-surface-container-low px-margin-mobile py-space-2xl">
+<div class="max-w-[1200px] mx-auto flex flex-col items-center">
+<span class="font-eyebrow text-eyebrow text-primary-container uppercase tracking-widest text-center">WHAT I DO</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface font-bold text-center mt-2 mb-space-xl max-w-xl">
+        Turning raw data into strategic action
+      </h2>
+<!-- 3 Pillar Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg w-full">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-space-lg shadow-sm flex flex-col items-start hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-primary-fixed flex items-center justify-center mb-space-md shrink-0">
+<span class="material-symbols-outlined text-primary-container text-[26px]">database</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-2">
+            Data Analysis & Reporting
+          </h3>
+<p class="font-body-sm text-body-sm text-secondary">
+            Extracting patterns, cleaning complex datasets, and synthesizing metrics into actionable executive summaries.
+          </p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-space-lg shadow-sm flex flex-col items-start hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-primary-fixed flex items-center justify-center mb-space-md shrink-0">
+<span class="material-symbols-outlined text-primary-container text-[26px]">bar_chart</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-2">
+            Dashboards & Visualization
+          </h3>
+<p class="font-body-sm text-body-sm text-secondary">
+            Building interactive BI dashboards and self-service reporting tools that bring operational data to life.
+          </p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-space-lg shadow-sm flex flex-col items-start hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-primary-fixed flex items-center justify-center mb-space-md shrink-0">
+<span class="material-symbols-outlined text-primary-container text-[26px]">lightbulb</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-2">
+            Problem Solving
+          </h3>
+<p class="font-body-sm text-body-sm text-secondary">
+            Translating business bottlenecks into empirical analytics hypotheses and data-driven solutions.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: SKILLS SECTION -->
+<section class="w-full bg-surface-container-low px-margin-mobile py-space-2xl">
+<div class="max-w-[1200px] mx-auto flex flex-col items-center">
+<span class="font-eyebrow text-eyebrow text-primary-container uppercase tracking-widest text-center">TECHNOLOGIES I WORK WITH</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface font-bold text-center mt-2 mb-space-xl">
+        Skills & Competencies
+      </h2>
+<!-- 3 Skills Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg w-full">
+<!-- Category 1 -->
+<div class="bg-surface-container-lowest p-space-lg shadow-sm flex flex-col">
+<div class="flex items-center gap-2 mb-space-md">
+<span class="material-symbols-outlined text-primary-container text-[22px]">code</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Analysis & Programming</h3>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="bg-primary-fixed text-primary-container font-label-sm text-label-sm px-2.5 py-1">Python</span>
+<span class="bg-primary-fixed text-primary-container font-label-sm text-label-sm px-2.5 py-1">Pandas</span>
+<span class="bg-primary-fixed text-primary-container font-label-sm text-label-sm px-2.5 py-1">NumPy</span>
+<span class="bg-primary-fixed text-primary-container font-label-sm text-label-sm px-2.5 py-1">Excel (VBA)</span>
+<span class="bg-primary-fixed text-primary-container font-label-sm text-label-sm px-2.5 py-1">Jupyter</span>
+</div>
+</div>
+<!-- Category 2 -->
+<div class="bg-surface-container-lowest p-space-lg shadow-sm flex flex-col">
+<div class="flex items-center gap-2 mb-space-md">
+<span class="material-symbols-outlined text-primary-container text-[22px]">query_stats</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Databases & BI Tools</h3>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="bg-primary-fixed text-primary-container font-label-sm text-label-sm px-2.5 py-1">SQL</span>
+<span class="bg-primary-fixed text-primary-container font-label-sm text-label-sm px-2.5 py-1">PostgreSQL</span>
+<span class="bg-primary-fixed text-primary-container font-label-sm text-label-sm px-2.5 py-1">Power BI</span>
+<span class="bg-primary-fixed text-primary-container font-label-sm text-label-sm px-2.5 py-1">Tableau</span>
+<span class="bg-primary-fixed text-primary-container font-label-sm text-label-sm px-2.5 py-1">BigQuery</span>
+</div>
+</div>
+<!-- Category 3 -->
+<div class="bg-surface-container-lowest p-space-lg shadow-sm flex flex-col">
+<div class="flex items-center gap-2 mb-space-md">
+<span class="material-symbols-outlined text-primary-container text-[22px]">calculate</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Statistics & Reporting</h3>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="bg-primary-fixed text-primary-container font-label-sm text-label-sm px-2.5 py-1">Hypothesis Testing</span>
+<span class="bg-primary-fixed text-primary-container font-label-sm text-label-sm px-2.5 py-1">Data Cleaning</span>
+<span class="bg-primary-fixed text-primary-container font-label-sm text-label-sm px-2.5 py-1">Cohort Retention</span>
+<span class="bg-primary-fixed text-primary-container font-label-sm text-label-sm px-2.5 py-1">Data Storytelling</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: RECENT PROJECTS SECTION -->
+<section class="w-full bg-surface-container-lowest px-margin-mobile py-space-2xl" id="projects">
+<div class="max-w-[1200px] mx-auto flex flex-col items-center">
+<span class="font-eyebrow text-eyebrow text-primary-container uppercase tracking-widest text-center">PORTFOLIO</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface font-bold text-center mt-2">
+        Recent Projects
+      </h2>
+<p class="font-body-md text-body-md text-secondary text-center mb-space-xl max-w-lg">
+        Selected case studies & analytical workflows
+      </p>
+<!-- Grid of 4 project cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg w-full">
+<!-- Card 1: Telco Churn prediction -->
+<div class="bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<!-- Banner Graphic Placeholder -->
+<div class="w-full h-40 bg-surface-container-high overflow-hidden mb-space-md relative flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Data analytics dashboard visualization displaying churn prediction probabilities, ROC AUC curve charts, correlation matrices, and user retention distribution curves in crisp red and slate blue tones on clean interface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvAGdKYJYB36kV4Z1X5LNo-ZlS2xFs9VtAQ9VvOEW0cLlRDj8QemUagb2gOg9K5ZKDVYTBU3jYZZUQoRMrSKqCFp6rw_N56vOGFlIYC9yffJz-ifsNV2FHW7M4DKfXKmlq56w5p8kKbnJuXSggrUqx_tudlq3xg0fw8CmEoWiMbZOHLTSN71y9pS28BzykztDHlTVfv8bp74NU7aWusmfxRf2Gic4KXOi3H6J36mM"/>
+<span class="absolute top-2 left-2 bg-primary-fixed text-primary-container font-label-sm text-label-sm px-2 py-0.5 font-semibold">
+                Machine Learning / Predictive
+              </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold mb-2">
+              Telco Churn prediction
+            </h3>
+<p class="font-body-sm text-body-sm text-secondary mb-space-md">
+              Customer retention modeling analyzing subscriber behavior patterns to flag high-risk customer segments.
+            </p>
+<div class="flex flex-wrap gap-1.5 mb-space-md">
+<span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-2 py-0.5">Python</span>
+<span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-2 py-0.5">pandas</span>
+<span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-2 py-0.5">scikit-learn</span>
+<span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-2 py-0.5">FastAPI</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-sm border-t border-surface-container">
+<a class="inline-flex items-center gap-1 text-primary-container font-label-md text-label-md hover:underline" href="#">
+<span>Read more</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<div class="flex items-center gap-2">
+<button aria-label="GitHub Repository" class="w-8 h-8 bg-inverse-surface text-inverse-on-surface flex items-center justify-center hover:bg-on-background transition-colors">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</button>
+<button aria-label="Live Demo" class="w-8 h-8 bg-surface-container text-on-surface flex items-center justify-center hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2: M-Pesa Agent Deposits Statistics Toolkit -->
+<div class="bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="w-full h-40 bg-surface-container-high overflow-hidden mb-space-md relative flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Financial analytics dashboard illustrating mobile money deposit metrics, liquidity float velocity charts, agent cluster analysis, and volume histograms tailored for Kenyan fintech in bold sharp UI" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWD5q9VbJS6c0PuHeYnE4GcQFcrSfLztBIsD7EPs7FyfsGRryNKThRE5Oja6OQOhXTfmlKbZlEfnC7nLyFRkU1EWPTDgSSW_ymSZpLJYIk7dQ_acvjxMjYweG6ACB_PA2wz9qh_1Ik5umMTFrrylwG8dfJ7D5n3e29FN9fyGXIESLITvRJ-Ga-t9krRHagNErw1-QZVrVa2cJewUP-5HFgna7lrLg-Etb3NVjP-VI"/>
+<span class="absolute top-2 left-2 bg-primary-fixed text-primary-container font-label-sm text-label-sm px-2 py-0.5 font-semibold">
+                FinTech / Cash Flow
+              </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold mb-2">
+              M-Pesa Agent Deposits Statistics Toolkit
+            </h3>
+<p class="font-body-sm text-body-sm text-secondary mb-space-md">
+              Quantitative toolkit analyzing liquidity velocity, deposit distributions, and float trends across Nairobi retail agents.
+            </p>
+<div class="flex flex-wrap gap-1.5 mb-space-md">
+<span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-2 py-0.5">Python</span>
+<span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-2 py-0.5">NumPy</span>
+<span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-2 py-0.5">Statistical Modeling</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-sm border-t border-surface-container">
+<a class="inline-flex items-center gap-1 text-primary-container font-label-md text-label-md hover:underline" href="#">
+<span>Read more</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<div class="flex items-center gap-2">
+<button aria-label="GitHub Repository" class="w-8 h-8 bg-inverse-surface text-inverse-on-surface flex items-center justify-center hover:bg-on-background transition-colors">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 3: Haraka Rides -->
+<div class="bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="w-full h-40 bg-surface-container-high overflow-hidden mb-space-md relative flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Urban mobility and logistics executive dashboard showing ride completions, peak hours heatmap, driver utilization rates, and route efficiency metrics with clean crisp data tables" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyojohv7r-L-zjtwDAyWseb9_dfUzOPIqQVdbKUJTTcoWPUwczKf5OwBHU4TUMcTRJmGS17wuNdJyhFznuVP80YvR0VgO6jJKFjIyRUxWbwjFgwiA-25CldmvVxM_MERCDTJVkFIA7TnBgP5CWukyVYAvkSjd9gBr2VRynfF7E1HwfU-3JmyLB4zt25TFgD7V1gEsexHzN_BIG5RN0c1hbJgnkloDEauW-0Y-JikM"/>
+<span class="absolute top-2 left-2 bg-primary-fixed text-primary-container font-label-sm text-label-sm px-2 py-0.5 font-semibold">
+                Urban Mobility & Logistics
+              </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold mb-2">
+              Haraka Rides - Performance BI
+            </h3>
+<p class="font-body-sm text-body-sm text-secondary mb-space-md">
+              Power BI performance dashboard tracking driver utilization, peak-surge fare distribution, and ride completion metrics.
+            </p>
+<div class="flex flex-wrap gap-1.5 mb-space-md">
+<span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-2 py-0.5">SQL</span>
+<span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-2 py-0.5">Power BI</span>
+<span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-2 py-0.5">DAX</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-sm border-t border-surface-container">
+<a class="inline-flex items-center gap-1 text-primary-container font-label-md text-label-md hover:underline" href="#">
+<span>Read more</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<div class="flex items-center gap-2">
+<button aria-label="Dashboard View" class="w-8 h-8 bg-surface-container text-on-surface flex items-center justify-center hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[18px]">query_stats</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 4: Sales Analytics -->
+<div class="bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="w-full h-40 bg-surface-container-high overflow-hidden mb-space-md relative flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Commercial retail analytics pipeline visualization showing inventory velocity graphs, conversion funnel bar charts, and gross margin trends on modern minimalist backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnGTK4ynwUuorWR7hlhHf90UtO0qTNN_ZLC4J7P9gbstdx1mn73gvxv1BDmNQ7WnzCe6ZXiTcdMYWG7eJqj97S8CTjOdGKznmKnRo6hVCpfLJbt1PxT1wQCkdvDu1gLG-9NRbadYdM-6D3IrqGjxxZMGVNGQAm3gS8vCCTES_KDM42mxnWmzv_JvjK4k7BlW12Ub77zpYfd1qKucOHic1Pc6x2VIIaiXNuwv0mJY4"/>
+<span class="absolute top-2 left-2 bg-primary-fixed text-primary-container font-label-sm text-label-sm px-2 py-0.5 font-semibold">
+                Commercial Retail
+              </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold mb-2">
+              Sales Analytics & Pipeline
+            </h3>
+<p class="font-body-sm text-body-sm text-secondary mb-space-md">
+              End-to-end sales funnel and inventory velocity reporting pipelines connecting PostgreSQL to automated stakeholder reports.
+            </p>
+<div class="flex flex-wrap gap-1.5 mb-space-md">
+<span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-2 py-0.5">Python</span>
+<span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-2 py-0.5">Pandas</span>
+<span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-2 py-0.5">SQL</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-sm border-t border-surface-container">
+<a class="inline-flex items-center gap-1 text-primary-container font-label-md text-label-md hover:underline" href="#">
+<span>Read more</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<div class="flex items-center gap-2">
+<button aria-label="Demo View" class="w-8 h-8 bg-surface-container text-on-surface flex items-center justify-center hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Button -->
+<a class="mt-space-xl inline-flex items-center gap-2 bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md px-6 py-3 transition-colors shadow-sm" href="#projects">
+<span>View all projects</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- SECTION 5: EXPERIENCE SECTION -->
+<section class="w-full bg-surface-container-low px-margin-mobile py-space-2xl">
+<div class="max-w-[1200px] mx-auto flex flex-col items-center">
+<span class="font-eyebrow text-eyebrow text-primary-container uppercase tracking-widest text-center">WHERE I'VE DELIVERED</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface font-bold text-center mt-2 mb-space-xl">
+        Professional Experience
+      </h2>
+<!-- Timeline Structure -->
+<div class="w-full max-w-2xl flex flex-col relative pl-6 sm:pl-8">
+<!-- Subtle vertical timeline bar -->
+<div class="absolute left-2 top-2 bottom-2 w-0.5 bg-surface-container-highest"></div>
+<!-- Experience Card 1 -->
+<div class="relative mb-space-xl">
+<!-- Square Milestone Marker -->
+<div class="absolute -left-[27px] sm:-left-[35px] top-1 w-3.5 h-3.5 bg-primary-container border-2 border-surface-container-lowest"></div>
+<div class="bg-surface-container-lowest p-space-lg shadow-sm">
+<div class="flex flex-wrap items-center justify-between gap-2 mb-1">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Junior Data Analyst</h3>
+<span class="bg-primary-fixed text-primary-container font-label-sm text-label-sm px-2 py-0.5 font-semibold">Current</span>
+</div>
+<span class="font-label-md text-label-md text-primary-container font-bold">LT Labs</span>
+</div>
+<div class="flex flex-wrap items-center gap-4 text-secondary font-label-sm text-label-sm mb-space-md">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+                Jan 2026 – Present
+              </span>
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+                Nairobi, Kenya
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mb-space-md">
+              Designing automated data extraction pipelines, conducting cohort retention analyses, and building custom operational dashboards for product teams.
+            </p>
+<div class="flex flex-wrap gap-1.5">
+<span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-2 py-0.5">Python</span>
+<span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-2 py-0.5">SQL</span>
+<span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-2 py-0.5">Dashboards</span>
+<span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-2 py-0.5">Automation</span>
+</div>
+</div>
+</div>
+<!-- Experience Card 2 -->
+<div class="relative">
+<!-- Square Milestone Marker -->
+<div class="absolute -left-[27px] sm:-left-[35px] top-1 w-3.5 h-3.5 bg-secondary border-2 border-surface-container-lowest"></div>
+<div class="bg-surface-container-lowest p-space-lg shadow-sm">
+<div class="flex flex-wrap items-center justify-between gap-2 mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Relationship Officer</h3>
+<span class="font-label-md text-label-md text-primary-container font-bold">Equity Bank Kenya</span>
+</div>
+<div class="flex flex-wrap items-center gap-4 text-secondary font-label-sm text-label-sm mb-space-md">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+                2023 – 2025
+              </span>
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+                Nairobi, Kenya
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mb-space-md">
+              Analyzed SME customer portfolio financials, managed risk assessments, and streamlined loan servicing through data-backed account audits.
+            </p>
+<div class="flex flex-wrap gap-1.5">
+<span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-2 py-0.5">Financial Analysis</span>
+<span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-2 py-0.5">Customer Analytics</span>
+<span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-2 py-0.5">Risk Modeling</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: CONTACT SECTION -->
+<section class="w-full bg-tertiary-fixed px-margin-mobile py-space-2xl text-on-tertiary-fixed" id="contact">
+<div class="max-w-[1200px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-xl">
+<!-- Left: Details -->
+<div class="flex flex-col items-start justify-center">
+<span class="font-eyebrow text-eyebrow text-primary-container uppercase tracking-widest">GET IN TOUCH</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg font-bold mt-2 mb-space-sm text-on-tertiary-fixed">
+            Let's work with data
+          </h2>
+<p class="font-body-md text-body-md text-on-tertiary-fixed-variant mb-space-lg">
+            Open to roles, collaborations, and freelance analytical projects.
+          </p>
+<!-- Contact items with square icon tiles -->
+<div class="flex flex-col gap-space-md w-full">
+<!-- Email -->
+<a class="flex items-center gap-space-sm group" href="mailto:rose.odiwuor@example.com">
+<div class="w-10 h-10 bg-surface-container-lowest flex items-center justify-center shadow-sm shrink-0">
+<span class="material-symbols-outlined text-primary-container text-[20px]">mail</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-tertiary-fixed-variant">Email</span>
+<span class="font-label-md text-label-md text-on-tertiary-fixed group-hover:text-primary-container transition-colors truncate">rose.odiwuor@example.com</span>
+</div>
+</a>
+<!-- Location -->
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 bg-surface-container-lowest flex items-center justify-center shadow-sm shrink-0">
+<span class="material-symbols-outlined text-primary-container text-[20px]">location_on</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-tertiary-fixed-variant">Location</span>
+<span class="font-label-md text-label-md text-on-tertiary-fixed">Nairobi, Kenya</span>
+</div>
+</div>
+<!-- LinkedIn -->
+<a class="flex items-center gap-space-sm group" href="https://linkedin.com/in/rose-odiwuor" rel="noopener noreferrer" target="_blank">
+<div class="w-10 h-10 bg-surface-container-lowest flex items-center justify-center shadow-sm shrink-0">
+<span class="material-symbols-outlined text-primary-container text-[20px]">link</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-tertiary-fixed-variant">LinkedIn</span>
+<span class="font-label-md text-label-md text-on-tertiary-fixed group-hover:text-primary-container transition-colors truncate">linkedin.com/in/rose-odiwuor</span>
+</div>
+</a>
+</div>
+</div>
+<!-- Right: Crisp Form Card -->
+<div class="bg-surface-container-lowest p-space-lg shadow-sm">
+<form class="flex flex-col gap-space-md" id="portfolio-contact-form" onsubmit="event.preventDefault(); document.getElementById('form-feedback').classList.remove('hidden');">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="contact-name">Name</label>
+<input class="w-full bg-surface-container-lowest px-3 py-2.5 font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-high transition-colors" id="contact-name" placeholder="Jane Doe" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="contact-email">Email (optional)</label>
+<input class="w-full bg-surface-container-lowest px-3 py-2.5 font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-high transition-colors" id="contact-email" placeholder="jane@example.com" type="email"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1" for="contact-message">Message</label>
+<textarea class="w-full bg-surface-container-lowest px-3 py-2.5 font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-high transition-colors" id="contact-message" placeholder="Tell me about your dataset or analytical opportunity..." required="" rows="4"></textarea>
+</div>
+<div class="hidden p-3 bg-primary-fixed text-primary-container font-label-sm text-label-sm" id="form-feedback">
+              Thanks! Your note has been queued. I will review it shortly.
+            </div>
+<button class="w-full bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md py-3 transition-colors shadow-sm mt-1" type="submit">
+              Send Message
+            </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 7: FOOTER SECTION -->
+<footer class="w-full bg-tertiary-fixed text-on-tertiary-fixed px-margin-mobile py-space-xl border-t border-tertiary/20">
+<div class="max-w-[1200px] mx-auto flex flex-col gap-space-xl">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Col 1: Identity -->
+<div class="flex flex-col gap-2">
+<span class="font-headline-sm text-headline-sm font-bold text-on-tertiary-fixed">Rose Odiwuor</span>
+<p class="font-body-sm text-body-sm text-on-tertiary-fixed-variant max-w-xs">
+            Data Analyst turning complex datasets into strategic clarity.
+          </p>
+</div>
+<!-- Col 2: Navigation Links -->
+<div class="flex flex-col gap-2">
+<span class="font-eyebrow text-eyebrow text-on-tertiary-fixed font-bold tracking-widest uppercase">EXPLORE</span>
+<div class="grid grid-cols-2 gap-y-1 gap-x-4">
+<a class="font-body-sm text-body-sm text-on-tertiary-fixed-variant hover:text-primary-container transition-colors" href="#">Home</a>
+<a class="font-body-sm text-body-sm text-on-tertiary-fixed-variant hover:text-primary-container transition-colors" href="#about">About</a>
+<a class="font-body-sm text-body-sm text-on-tertiary-fixed-variant hover:text-primary-container transition-colors" href="#skills">Skills</a>
+<a class="font-body-sm text-body-sm text-on-tertiary-fixed-variant hover:text-primary-container transition-colors" href="#experience">Experience</a>
+<a class="font-body-sm text-body-sm text-on-tertiary-fixed-variant hover:text-primary-container transition-colors" href="#projects">Projects</a>
+<a class="font-body-sm text-body-sm text-on-tertiary-fixed-variant hover:text-primary-container transition-colors" href="#contact">Contact</a>
+</div>
+</div>
+<!-- Col 3: Social Connectivity -->
+<div class="flex flex-col gap-2">
+<span class="font-eyebrow text-eyebrow text-on-tertiary-fixed font-bold tracking-widest uppercase">CONNECT</span>
+<a class="font-body-sm text-body-sm text-on-tertiary-fixed-variant hover:text-primary-container transition-colors" href="mailto:rose.odiwuor@example.com">
+            rose.odiwuor@example.com
+          </a>
+<div class="flex items-center gap-2 mt-2">
+<!-- GitHub -->
+<a aria-label="GitHub profile" class="w-9 h-9 bg-inverse-surface hover:bg-on-background text-inverse-on-surface flex items-center justify-center transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</a>
+<!-- LinkedIn -->
+<a aria-label="LinkedIn profile" class="w-9 h-9 bg-inverse-surface hover:bg-on-background text-inverse-on-surface flex items-center justify-center transition-colors" href="https://linkedin.com/in/rose-odiwuor" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">work</span>
+</a>
+<!-- Twitter/X -->
+<a aria-label="X (Twitter) profile" class="w-9 h-9 bg-inverse-surface hover:bg-on-background text-inverse-on-surface flex items-center justify-center transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</a>
+<!-- Email -->
+<a aria-label="Email directly" class="w-9 h-9 bg-inverse-surface hover:bg-on-background text-inverse-on-surface flex items-center justify-center transition-colors" href="mailto:rose.odiwuor@example.com">
+<span class="material-symbols-outlined text-[18px]">alternate_email</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Copyright Bar -->
+<div class="text-center pt-space-md border-t border-tertiary/20">
+<p class="font-label-sm text-label-sm text-on-tertiary-fixed-variant">
+          © 2026 Rose Odiwuor. All rights reserved.
+        </p>
+</div>
+</div>
+</footer>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_8px_rgba(0,0,0,0.04)]" data-active-classes="text-primary-container font-label-sm font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[52px] h-12 transition-colors text-primary-container font-label-sm font-bold" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-sm text-label-sm">Home</span></a><a class="flex flex-col items-center justify-center min-w-[52px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#"><span class="material-symbols-outlined text-[22px]">person</span><span class="font-label-sm text-label-sm">About</span></a><a class="flex flex-col items-center justify-center min-w-[52px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="skills" href="#"><span class="material-symbols-outlined text-[22px]">terminal</span><span class="font-label-sm text-label-sm">Skills</span></a><a class="flex flex-col items-center justify-center min-w-[52px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="experience" href="#"><span class="material-symbols-outlined text-[22px]">timeline</span><span class="font-label-sm text-label-sm">Experience</span></a><a class="flex flex-col items-center justify-center min-w-[52px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="projects" href="#"><span class="material-symbols-outlined text-[22px]">query_stats</span><span class="font-label-sm text-label-sm">Projects</span></a><a class="flex flex-col items-center justify-center min-w-[52px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#"><span class="material-symbols-outlined text-[22px]">alternate_email</span><span class="font-label-sm text-label-sm">Contact</span></a></div></nav></body></html>

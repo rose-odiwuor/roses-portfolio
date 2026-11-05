@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 20 600 200" role="img" aria-label="Churn model: curve and model comparison bars"><rect y="0" width="600" height="240" fill="#F4F7F5"/><rect x="24" y="24" width="270" height="192" fill="#fff"/><line x1="48" y1="192" x2="270" y2="192" stroke="#dce2f7"/><line x1="48" y1="48" x2="48" y2="192" stroke="#dce2f7"/>
+<line x1="48" y1="192" x2="270" y2="48" stroke="#E3EAE8" stroke-dasharray="4 4"/><path d="M48 192 C62 120 90 84 130 72 S220 54 270 48" fill="none" stroke="#115E59" stroke-width="4" stroke-linecap="round"/>
+<rect x="318" y="24" width="258" height="192" fill="#fff"/>
+<rect x="346" y="150" width="34" height="42" fill="#E3EAE8"/><rect x="392" y="120" width="34" height="72" fill="#545f73" opacity=".6"/><rect x="438" y="84" width="34" height="108" fill="#0F766E" opacity=".7"/><rect x="484" y="60" width="34" height="132" fill="#115E59"/>
+<line x1="334" y1="192" x2="560" y2="192" stroke="#dce2f7"/></svg>
